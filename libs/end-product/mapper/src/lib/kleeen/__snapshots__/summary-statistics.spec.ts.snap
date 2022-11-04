@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`kleeen summary-statistics should return "MultiTransFormationResults[]" response if "mapToSummaryStatistics" is called from a Gauge widget 1`] = `
+Array [
+  Object {
+    "crossLinking": Array [],
+    "format": Object {
+      "max": 100,
+      "min": 0,
+      "severityBad": 0,
+      "severityGood": 100,
+      "severityLevels": 5,
+    },
+    "results": "100",
+    "transformation": "selfSingle",
+  },
+]
+`;
+
+exports[`kleeen summary-statistics should return "MultiTransFormationResults[]" response if "mapToSummaryStatistics" is called from a Summary Statistics widget 1`] = `
+Array [
+  Object {
+    "crossLinking": Array [],
+    "format": undefined,
+    "results": 24,
+    "transformation": "countTotal",
+  },
+]
+`;

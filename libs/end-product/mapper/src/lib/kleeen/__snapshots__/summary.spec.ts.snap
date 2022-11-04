@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`kleeen summary should return "GetListingDataResults" response if "mapToSummary" is called from a Summary Entity Detail widget 1`] = `
+Object {
+  "data": Array [
+    Object {
+      "vehicle": Object {
+        "displayValue": 7,
+        "id": 7,
+      },
+    },
+    Object {
+      "vehicleBrand": Object {
+        "displayMedia": Object {
+          "type": "text",
+          "value": "BYD",
+        },
+        "displayValue": "BYD",
+        "id": undefined,
+      },
+    },
+    Object {
+      "vehicleModel": Object {
+        "displayMedia": Object {
+          "type": "text",
+          "value": "S2",
+        },
+        "displayValue": "S2",
+        "id": undefined,
+      },
+    },
+    Object {
+      "vehicleWarranty": Object {
+        "displayMedia": null,
+        "displayValue": "Active",
+        "id": undefined,
+      },
+    },
+    Object {
+      "completedService": Object {
+        "displayValue": 10,
+        "id": undefined,
+      },
+    },
+    Object {
+      "scheduledService": Object {
+        "displayValue": 1,
+        "id": undefined,
+      },
+    },
+    Object {
+      "currentMileage": Object {
+        "displayValue": 222206,
+        "id": undefined,
+      },
+    },
+  ],
+  "format": Object {
+    "completedService": Object {
+      "examples": Array [],
+    },
+    "currentMileage": Object {
+      "examples": Array [],
+      "max": 189000,
+      "min": 0,
+    },
+    "scheduledService": Object {
+      "examples": Array [],
+    },
+    "vehicle": Object {
+      "examples": Array [
+        "Fleet Car 1",
+        "Fleet Car 2",
+        "Fleet Car 3",
+        "Fleet Car 4",
+        "Loaner Car",
+        "Loaner Van",
+        "Loaner Truck",
+        "Service Van 1",
+        "Service Van 2",
+        "Delivery Van",
+        "Delivery Truck",
+        "Service Truck 1",
+        "Service Truck 2",
+        "Executive Car 1",
+        "Executive Car 2",
+        "Executive Car 3",
+        "Sales Car 1",
+        "Sales Car 2",
+        "Sales Car 3",
+      ],
+    },
+    "vehicleBrand": Object {
+      "examples": Array [
+        "Datsun",
+        "Delorean",
+        "Pontiac",
+        "Plymouth",
+        "Desoto",
+        "Mercury",
+        "Tucker",
+        "Oldsmobile",
+        "Studebaker",
+        "Kaiser",
+        "Saturn",
+        "AMC",
+        "Edsel",
+        "Auburn",
+        "Checker",
+        "Dusenburg",
+        "Fisker",
+        "Hudson",
+        "MGB",
+        "Triumph",
+      ],
+    },
+    "vehicleModel": Object {
+      "examples": Array [
+        "M1",
+        "M2",
+        "M3",
+        "M5",
+        "M4",
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "X1",
+        "X2",
+        "X3",
+        "X4",
+        "X5",
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+      ],
+    },
+    "vehicleWarranty": Object {
+      "examples": Array [],
+    },
+  },
+}
+`;

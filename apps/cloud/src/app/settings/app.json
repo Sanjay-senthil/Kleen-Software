@@ -1,0 +1,10 @@
+{
+  "companyName": "Sahara Recidency",
+  "crossLinkingInteraction": "On click",
+  "defaultHomePage": "/entertainment",
+  "layout": {
+    "position": "nav-left"
+  },
+  "productName": "Fleet Manager",
+  "rootVersion": "5.15.0.500.bc56910c9"
+}

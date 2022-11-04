@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`compatibility filters should return a filters objects with all keys if "filters" has all operators 1`] = `
+Object {
+  "CoffeeShop": Object {
+    "_in": Array [
+      "Chocolatito",
+    ],
+  },
+  "Salary": Object {
+    "_in": Array [
+      20,
+    ],
+    "max": 23,
+    "min": 14,
+  },
+  "Timestamp": Object {
+    "from": 1633101300000,
+    "to": 1633274100000,
+  },
+}
+`;
