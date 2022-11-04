@@ -1,0 +1,10 @@
+{
+  "companyName": "Health Care",
+  "crossLinkingInteraction": "On click",
+  "defaultHomePage": "/entertainment",
+  "layout": {
+    "position": "nav-left"
+  },
+  "productName": "Hospital",
+  "rootVersion": "5.15.0.500.bc56910c9"
+}

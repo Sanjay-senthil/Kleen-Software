@@ -1,0 +1,563 @@
+{
+  "NAVIGATION": {
+    "CHILDREN": {
+      "COLLEGEDB": {
+        "PERMISSIONS": {
+          "ADMIN": "SHOW",
+          "GUEST": "SHOW"
+        }
+      },
+      "EMPLOYEEDB": {
+        "PERMISSIONS": {
+          "ADMIN": "SHOW",
+          "GUEST": "SHOW"
+        }
+      },
+      "ENTERTAINMENT": {
+        "PERMISSIONS": {
+          "ADMIN": "SHOW",
+          "GUEST": "SHOW"
+        }
+      },
+      "HOSPITALMANAGEMENT": {
+        "PERMISSIONS": {
+          "ADMIN": "SHOW",
+          "GUEST": "SHOW"
+        }
+      },
+      "MANAGEMENT": {
+        "PERMISSIONS": {
+          "ADMIN": "SHOW",
+          "GUEST": "SHOW"
+        }
+      },
+      "SERVICE": {
+        "PERMISSIONS": {
+          "ADMIN": "SHOW",
+          "GUEST": "SHOW"
+        }
+      },
+      "VEHICLEDETAIL": {
+        "PERMISSIONS": {
+          "ADMIN": "SHOW",
+          "GUEST": "SHOW"
+        }
+      },
+      "VEHICLEINVENTORY": {
+        "PERMISSIONS": {
+          "ADMIN": "SHOW",
+          "GUEST": "SHOW"
+        }
+      }
+    },
+    "PERMISSIONS": {
+      "ADMIN": "SHOW",
+      "GUEST": "SHOW"
+    }
+  },
+  "COLLEGEDB": {
+    "CHILDREN": {
+      "WIDGETS": {
+        "CHILDREN": {
+          "55A7E5E4-04FA-434B-95F1-0E5E3418FA89": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "AD49C687-E5CC-45F4-A8C1-9991C4067290": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "CC7A36CE-F63C-450F-A8E1-FAB941AEB426": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      },
+      "VIEWS": {
+        "CHILDREN": {
+          "COLLEGE": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "STAFF": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "STUDENTRECORDS": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      }
+    }
+  },
+  "EMPLOYEEDB": {
+    "CHILDREN": {
+      "WIDGETS": {
+        "CHILDREN": {
+          "0DAA8EC2-F8AA-4250-B292-2DD49A32DE6F": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "28CC8C50-1F73-4589-A015-7E039B786521": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "4680D179-A146-49C2-94E5-1F8D89C36505": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      },
+      "VIEWS": {
+        "CHILDREN": {
+          "DASHBOARD1": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "REPORT1": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      }
+    }
+  },
+  "ENTERTAINMENT": {
+    "CHILDREN": {
+      "WIDGETS": {
+        "CHILDREN": {
+          "2955B638-00B8-4D4F-8233-41B85184C801": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "8F597D1F-2478-4BA2-B43C-2C230172CA99": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "D6044BC8-DA24-4FBD-9BB8-5B479FCD0AB5": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "EC77CD47-D556-40D5-8225-1A7AE0B5B01D": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "F166F0F6-3747-4FD0-8440-823EC9798A18": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      },
+      "VIEWS": {
+        "CHILDREN": {
+          "ENTERTAINMENT": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "ENTERTAINMENTTABLE": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      }
+    }
+  },
+  "HOSPITALMANAGEMENT": {
+    "CHILDREN": {
+      "WIDGETS": {
+        "CHILDREN": {
+          "04315240-B0AB-4990-8BFE-A10B3D05F98A": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "097AF69F-2455-4993-B0E5-62CB4F50C50E": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "14AF3BF8-C910-4B7D-A69F-E5C13BD6F260": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "3865655C-A83F-4848-B963-21942F33B3D2": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "74A505F3-8CD6-49CB-81CD-3C88CFD26711": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "7AF0C100-C352-463E-9633-0A0447CEC0F7": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "BBF06C05-21AB-4F6E-8F5A-B13A18BC722D": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "C0EDD327-8041-4E8A-B108-7BBF9DEBDB78": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "E60C1092-8CBA-4BA6-8A09-332660264C13": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      },
+      "VIEWS": {
+        "CHILDREN": {
+          "DASHBOARD1": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "HOSPITALMAINTENANCE": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "REPORT1": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      }
+    }
+  },
+  "MANAGEMENT": {
+    "CHILDREN": {
+      "WIDGETS": {
+        "CHILDREN": {
+          "175E5113-B3A2-4DD7-904A-DB2D69B801F5": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "1DF19DE6-78F9-4C7B-91C6-8A1229A768C0": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "2AD43285-0AC5-4B6D-A401-F14C63EECF3F": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "42A2B0A9-B0D7-405C-91D0-2C48797646EA": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "4F2B8BA8-0AB1-4F91-A866-E4551BB3FFD4": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "5081D20A-C065-4439-99E0-9B55549A7E7B": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "57BA35FA-13BF-4F15-AD4E-F0D81B62C550": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "9A53F00F-2D78-4680-8066-4833234FEDE9": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "9B59BB7D-F94C-4A2C-81D6-CE38AD6C356D": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "A3EA9BF4-D82E-49FC-A91B-C31E91D55C57": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "AEB87860-CF14-44FA-B6E1-4883A4967627": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "F17C2A24-D9D0-4C38-9A38-916463C8740E": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "FDA8BEC5-0887-41BA-9994-E09FAE8E4B80": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      },
+      "VIEWS": {
+        "CHILDREN": {
+          "MANAGEMENT": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "MANAGEMENTREPORT": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "MANAGINGTABLE": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      }
+    }
+  },
+  "SERVICE": {
+    "CHILDREN": {
+      "WIDGETS": {
+        "CHILDREN": {
+          "285E4FE1-61B3-460E-BB72-30F81E33D0AB": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "7FB069E3-7B2B-4EE8-81A4-3191F7972ACC": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "873CC59C-799B-42F3-A52C-6BBCE52B6D2F": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "F7B47FFB-A67B-4103-A0FC-7833B1A0245D": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      },
+      "VIEWS": {
+        "CHILDREN": {
+          "SERVICEDASHBOARD": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "SERVICEREPORT": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "SERVICESTABLE": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      }
+    }
+  },
+  "VEHICLEDETAIL": {
+    "CHILDREN": {
+      "WIDGETS": {
+        "CHILDREN": {
+          "1BF5E483-AEE0-4D3A-8D38-8447C96BA57F": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "B92F69E9-2E6A-42FE-B640-4660BE090E68": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "D167ADAC-ECB5-4ECE-8FEC-212CC0862287": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      },
+      "VIEWS": {
+        "CHILDREN": {
+          "COMPLETEDSERVICERECORDS": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "DASHBOARD2": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "SCHEDULEDSERVICERECORDS": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "VEHICLEDASHBOARD": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      }
+    }
+  },
+  "VEHICLEINVENTORY": {
+    "CHILDREN": {
+      "WIDGETS": {
+        "CHILDREN": {
+          "1075E94E-AD5D-423D-AA6E-084C1157B7D0": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "28625961-64D7-424C-BF41-9EF87E476C8F": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "D1F2A4D4-1452-433A-AF71-40A372DE0A07": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "D4E99E9E-3B00-446E-9BC1-F05EB12FA2F2": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "EF96B86D-8676-4692-B1C1-57B962A8373A": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      },
+      "VIEWS": {
+        "CHILDREN": {
+          "INVENTORYREPORT": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          },
+          "TABLEOFVEHICLE1": {
+            "PERMISSIONS": {
+              "ADMIN": "SHOW",
+              "GUEST": "SHOW"
+            }
+          }
+        }
+      }
+    }
+  },
+  "USERPREFERENCES": {
+    "PERMISSIONS": {
+      "ADMIN": "SHOW",
+      "GUEST": "SHOW"
+    },
+    "CHILDREN": {}
+  }
+}

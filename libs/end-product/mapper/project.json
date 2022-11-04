@@ -1,0 +1,22 @@
+{
+  "root": "libs/end-product/mapper",
+  "sourceRoot": "libs/end-product/mapper/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/end-product/mapper/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/end-product/mapper"],
+      "options": {
+        "jestConfig": "libs/end-product/mapper/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
