@@ -1,0 +1,15 @@
+export enum ClassNameBem {
+  App = 'app',
+  ActionsMenu = 'ks-actions-menu',
+  DataDisplaySection = 'ks-data-display-section',
+  DatePickerInterval = 'ks-date-picker-interval',
+  FilterQueryBuilder = 'ks-filter-query-builder',
+  FilterRow = 'ks-filter-row',
+  FilterSection = 'ks-filter-section',
+  FilterTooltip = 'ks-filter-tooltip',
+  Ks = 'ks',
+  Label = 'ks-label',
+  Layout = 'ks-layout',
+  Link = 'ks-link',
+  SummaryPanel = 'ks-summary-panel',
+}

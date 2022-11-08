@@ -1,0 +1,5711 @@
+[
+  {
+    "name": "Timestamp",
+    "formatType": "timestamp",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "format": {},
+        "formatType": "timestamp",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "timestamp"
+      }
+    }
+  },
+  {
+    "name": "Vehicle",
+    "description": "",
+    "formatType": "prime",
+    "initialQuantity": 19,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Fleet Car 1",
+            "Fleet Car 2",
+            "Fleet Car 3",
+            "Fleet Car 4",
+            "Loaner Car",
+            "Loaner Van",
+            "Loaner Truck",
+            "Service Van 1",
+            "Service Van 2",
+            "Delivery Van",
+            "Delivery Truck",
+            "Service Truck 1",
+            "Service Truck 2",
+            "Executive Car 1",
+            "Executive Car 2",
+            "Executive Car 3",
+            "Sales Car 1",
+            "Sales Car 2",
+            "Sales Car 3"
+          ]
+        },
+        "formatType": "prime",
+        "name": "displayValue",
+        "params": [
+          [
+            "Fleet Car 1",
+            "Fleet Car 2",
+            "Fleet Car 3",
+            "Fleet Car 4",
+            "Loaner Car",
+            "Loaner Van",
+            "Loaner Truck",
+            "Service Van 1",
+            "Service Van 2",
+            "Delivery Van",
+            "Delivery Truck",
+            "Service Truck 1",
+            "Service Truck 2",
+            "Executive Car 1",
+            "Executive Car 2",
+            "Executive Car 3",
+            "Sales Car 1",
+            "Sales Car 2",
+            "Sales Car 3"
+          ]
+        ],
+        "statisticalType": "Data - Categorical",
+        "type": "oneOfEach"
+      },
+      "vehicleModel": {
+        "description": "",
+        "format": {
+          "examples": [
+            "M1",
+            "M2",
+            "M3",
+            "M5",
+            "M4",
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "C5"
+          ]
+        },
+        "formatType": "prime",
+        "name": "vehicleModel",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "VehicleModel"
+      },
+      "vehicleWarranty": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "uuid",
+        "name": "vehicleWarranty",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "VehicleWarranty"
+      },
+      "serviceRecord": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "uuid",
+        "name": "serviceRecord",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "ServiceRecord"
+      },
+      "scheduledService": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "uuid",
+        "name": "scheduledService",
+        "params": [
+          "ScheduledService",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "currentMileage": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 189000
+        },
+        "formatType": "integer",
+        "name": "currentMileage",
+        "params": [
+          "CurrentMileage",
+          20,
+          [
+            0,
+            1000000
+          ]
+        ],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "arrayOf"
+      },
+      "completedService": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "uuid",
+        "name": "completedService",
+        "params": [
+          "CompletedService",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "warrantyStatus": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Expired",
+            "Active"
+          ],
+          "valueLabels": [
+            {
+              "label": "Expired",
+              "value": 1
+            },
+            {
+              "label": "Active",
+              "value": 2
+            }
+          ],
+          "max": 2,
+          "min": 1,
+          "severityBad": 1,
+          "severityGood": 2,
+          "severityLevels": 2
+        },
+        "formatType": "severity_level",
+        "name": "warrantyStatus",
+        "params": [
+          1,
+          2
+        ],
+        "statisticalType": "Data - Categorical - ordered - Severity Ranking",
+        "type": "WarrantyStatus"
+      },
+      "vehicleBrand": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Datsun",
+            "Delorean",
+            "Pontiac",
+            "Plymouth",
+            "Desoto",
+            "Mercury",
+            "Tucker",
+            "Oldsmobile",
+            "Studebaker",
+            "Kaiser",
+            "Saturn",
+            "AMC",
+            "Edsel",
+            "Auburn",
+            "Checker",
+            "Dusenburg",
+            "Fisker",
+            "Hudson",
+            "MGB",
+            "Triumph"
+          ]
+        },
+        "formatType": "prime",
+        "name": "vehicleBrand",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "VehicleBrand"
+      },
+      "timestamp": {
+        "format": {
+          "dateTime": {}
+        },
+        "formatType": "timestamp",
+        "name": "timestamp",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "Timestamp"
+      }
+    }
+  },
+  {
+    "name": "VehicleBrand",
+    "description": "",
+    "formatType": "prime",
+    "initialQuantity": 20,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Datsun",
+            "Delorean",
+            "Pontiac",
+            "Plymouth",
+            "Desoto",
+            "Mercury",
+            "Tucker",
+            "Oldsmobile",
+            "Studebaker",
+            "Kaiser",
+            "Saturn",
+            "AMC",
+            "Edsel",
+            "Auburn",
+            "Checker",
+            "Dusenburg",
+            "Fisker",
+            "Hudson",
+            "MGB",
+            "Triumph"
+          ]
+        },
+        "formatType": "prime",
+        "name": "displayValue",
+        "params": [
+          [
+            "Datsun",
+            "Delorean",
+            "Pontiac",
+            "Plymouth",
+            "Desoto",
+            "Mercury",
+            "Tucker",
+            "Oldsmobile",
+            "Studebaker",
+            "Kaiser",
+            "Saturn",
+            "AMC",
+            "Edsel",
+            "Auburn",
+            "Checker",
+            "Dusenburg",
+            "Fisker",
+            "Hudson",
+            "MGB",
+            "Triumph"
+          ]
+        ],
+        "statisticalType": "Data - Categorical",
+        "type": "oneOfEach"
+      },
+      "vehicle": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Fleet Car 1",
+            "Fleet Car 2",
+            "Fleet Car 3",
+            "Fleet Car 4",
+            "Loaner Car",
+            "Loaner Van",
+            "Loaner Truck",
+            "Service Van 1",
+            "Service Van 2",
+            "Delivery Van",
+            "Delivery Truck",
+            "Service Truck 1",
+            "Service Truck 2",
+            "Executive Car 1",
+            "Executive Car 2",
+            "Executive Car 3",
+            "Sales Car 1",
+            "Sales Car 2",
+            "Sales Car 3"
+          ]
+        },
+        "formatType": "prime",
+        "name": "vehicle",
+        "params": [
+          "Vehicle",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "VehicleModel",
+    "description": "",
+    "formatType": "prime",
+    "initialQuantity": 20,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [
+            "M1",
+            "M2",
+            "M3",
+            "M5",
+            "M4",
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "C5"
+          ]
+        },
+        "formatType": "prime",
+        "name": "displayValue",
+        "params": [
+          [
+            "M1",
+            "M2",
+            "M3",
+            "M5",
+            "M4",
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "C5"
+          ]
+        ],
+        "statisticalType": "Data - Categorical",
+        "type": "oneOfEach"
+      },
+      "vehicle": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Fleet Car 1",
+            "Fleet Car 2",
+            "Fleet Car 3",
+            "Fleet Car 4",
+            "Loaner Car",
+            "Loaner Van",
+            "Loaner Truck",
+            "Service Van 1",
+            "Service Van 2",
+            "Delivery Van",
+            "Delivery Truck",
+            "Service Truck 1",
+            "Service Truck 2",
+            "Executive Car 1",
+            "Executive Car 2",
+            "Executive Car 3",
+            "Sales Car 1",
+            "Sales Car 2",
+            "Sales Car 3"
+          ]
+        },
+        "formatType": "prime",
+        "name": "vehicle",
+        "params": [
+          "Vehicle",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "ServiceDescription",
+    "description": "",
+    "formatType": "prime",
+    "initialQuantity": 20,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Flat Tire",
+            "Broken Glass",
+            "Oil Change",
+            "Regular Service Interval",
+            "Batttery",
+            "Exterior Damage",
+            "Engine Noise",
+            "Suspension",
+            "Brakes",
+            "Electrical",
+            "Interior",
+            "Air Conditioning",
+            "Navigation",
+            "Error Code",
+            "Emissions",
+            "Inspection",
+            "Accident Repair",
+            "Transmission",
+            "Performance",
+            "Detailing"
+          ]
+        },
+        "formatType": "prime",
+        "name": "displayValue",
+        "params": [
+          [
+            "Flat Tire",
+            "Broken Glass",
+            "Oil Change",
+            "Regular Service Interval",
+            "Batttery",
+            "Exterior Damage",
+            "Engine Noise",
+            "Suspension",
+            "Brakes",
+            "Electrical",
+            "Interior",
+            "Air Conditioning",
+            "Navigation",
+            "Error Code",
+            "Emissions",
+            "Inspection",
+            "Accident Repair",
+            "Transmission",
+            "Performance",
+            "Detailing"
+          ]
+        ],
+        "statisticalType": "Data - Categorical",
+        "type": "oneOfEach"
+      },
+      "serviceRecord": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "uuid",
+        "name": "serviceRecord",
+        "params": [
+          "ServiceRecord",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "DatePerformed",
+    "description": "",
+    "formatType": "date",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "date",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "date"
+      },
+      "serviceRecord": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "uuid",
+        "name": "serviceRecord",
+        "params": [
+          "ServiceRecord",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "EstimatedCost",
+    "description": "",
+    "formatType": "USD",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "displayValue",
+        "params": [
+          1,
+          100
+        ],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "serviceRecord": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "uuid",
+        "name": "serviceRecord",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "ServiceRecord"
+      }
+    }
+  },
+  {
+    "name": "DowntimeHours",
+    "description": "",
+    "formatType": "integer",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 24,
+          "min": 1
+        },
+        "formatType": "integer",
+        "name": "displayValue",
+        "params": [
+          1,
+          24
+        ],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "serviceRecord": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "uuid",
+        "name": "serviceRecord",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "ServiceRecord"
+      }
+    }
+  },
+  {
+    "name": "ServiceCost",
+    "description": "",
+    "formatType": "USD",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "displayValue",
+        "params": [
+          1,
+          100
+        ],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "serviceRecord": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "uuid",
+        "name": "serviceRecord",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "ServiceRecord"
+      }
+    }
+  },
+  {
+    "name": "DateScheduled",
+    "description": "",
+    "formatType": "date",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "date",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "date"
+      },
+      "serviceRecord": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "uuid",
+        "name": "serviceRecord",
+        "params": [
+          "ServiceRecord",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "CurrentMileage",
+    "description": "",
+    "formatType": "integer",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 189000
+        },
+        "formatType": "integer",
+        "name": "displayValue",
+        "params": [
+          0,
+          1000000
+        ],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "vehicle": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Fleet Car 1",
+            "Fleet Car 2",
+            "Fleet Car 3",
+            "Fleet Car 4",
+            "Loaner Car",
+            "Loaner Van",
+            "Loaner Truck",
+            "Service Van 1",
+            "Service Van 2",
+            "Delivery Van",
+            "Delivery Truck",
+            "Service Truck 1",
+            "Service Truck 2",
+            "Executive Car 1",
+            "Executive Car 2",
+            "Executive Car 3",
+            "Sales Car 1",
+            "Sales Car 2",
+            "Sales Car 3"
+          ]
+        },
+        "formatType": "prime",
+        "name": "vehicle",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Vehicle"
+      },
+      "timestamp": {
+        "format": {
+          "dateTime": {
+            "month": "2-digit",
+            "year": "numeric"
+          }
+        },
+        "formatType": "timestamp",
+        "name": "timestamp",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "Timestamp"
+      }
+    }
+  },
+  {
+    "name": "ServiceRecordType",
+    "description": "",
+    "formatType": "severity_level",
+    "initialQuantity": 4,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Repair",
+            "Warranty",
+            "Recall",
+            "Preventative"
+          ],
+          "valueLabels": [
+            {
+              "label": "Repair",
+              "value": 1
+            },
+            {
+              "label": "Warranty",
+              "value": 2
+            },
+            {
+              "label": "Recall",
+              "value": 3
+            },
+            {
+              "label": "Preventative",
+              "value": 4
+            }
+          ],
+          "max": 4,
+          "min": 1,
+          "severityBad": 1,
+          "severityGood": 4,
+          "severityLevels": 4
+        },
+        "formatType": "severity_level",
+        "name": "displayValue",
+        "params": [
+          1,
+          4,
+          {
+            "severityGood": 4,
+            "severityBad": 1,
+            "severityLevels": 4,
+            "valueLabels": [
+              {
+                "label": "Repair",
+                "value": 1
+              },
+              {
+                "label": "Warranty",
+                "value": 2
+              },
+              {
+                "label": "Recall",
+                "value": 3
+              },
+              {
+                "label": "Preventative",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "statisticalType": "Data - Categorical - ordered - Severity Ranking",
+        "type": "severity_level"
+      },
+      "serviceRecord": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "uuid",
+        "name": "serviceRecord",
+        "params": [
+          "ServiceRecord",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "ServiceRecord",
+    "description": "",
+    "formatType": "uuid",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "uuid",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "uuid"
+      },
+      "serviceCost": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "serviceCost",
+        "params": [
+          1,
+          100
+        ],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "ServiceCost"
+      },
+      "estimatedCost": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "estimatedCost",
+        "params": [
+          1,
+          100
+        ],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "EstimatedCost"
+      },
+      "serviceRecordType": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Repair",
+            "Warranty",
+            "Recall",
+            "Preventative"
+          ],
+          "valueLabels": [
+            {
+              "label": "Repair",
+              "value": 1
+            },
+            {
+              "label": "Warranty",
+              "value": 2
+            },
+            {
+              "label": "Recall",
+              "value": 3
+            },
+            {
+              "label": "Preventative",
+              "value": 4
+            }
+          ],
+          "max": 4,
+          "min": 1,
+          "severityBad": 1,
+          "severityGood": 4,
+          "severityLevels": 4
+        },
+        "formatType": "severity_level",
+        "name": "serviceRecordType",
+        "params": [
+          1,
+          4
+        ],
+        "statisticalType": "Data - Categorical - ordered - Severity Ranking",
+        "type": "ServiceRecordType"
+      },
+      "downtimeHours": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 24,
+          "min": 1
+        },
+        "formatType": "integer",
+        "name": "downtimeHours",
+        "params": [
+          1,
+          24
+        ],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "DowntimeHours"
+      },
+      "vehicle": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Fleet Car 1",
+            "Fleet Car 2",
+            "Fleet Car 3",
+            "Fleet Car 4",
+            "Loaner Car",
+            "Loaner Van",
+            "Loaner Truck",
+            "Service Van 1",
+            "Service Van 2",
+            "Delivery Van",
+            "Delivery Truck",
+            "Service Truck 1",
+            "Service Truck 2",
+            "Executive Car 1",
+            "Executive Car 2",
+            "Executive Car 3",
+            "Sales Car 1",
+            "Sales Car 2",
+            "Sales Car 3"
+          ]
+        },
+        "formatType": "prime",
+        "name": "vehicle",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Vehicle"
+      },
+      "datePerformed": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "date",
+        "name": "datePerformed",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "DatePerformed"
+      },
+      "serviceDescription": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Flat Tire",
+            "Broken Glass",
+            "Oil Change",
+            "Regular Service Interval",
+            "Batttery",
+            "Exterior Damage",
+            "Engine Noise",
+            "Suspension",
+            "Brakes",
+            "Electrical",
+            "Interior",
+            "Air Conditioning",
+            "Navigation",
+            "Error Code",
+            "Emissions",
+            "Inspection",
+            "Accident Repair",
+            "Transmission",
+            "Performance",
+            "Detailing"
+          ]
+        },
+        "formatType": "prime",
+        "name": "serviceDescription",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "ServiceDescription"
+      },
+      "timestamp": {
+        "format": {
+          "dateTime": {
+            "day": "2-digit",
+            "month": "2-digit",
+            "year": "numeric"
+          }
+        },
+        "formatType": "timestamp",
+        "name": "timestamp",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "Timestamp"
+      },
+      "dateScheduled": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "date",
+        "name": "dateScheduled",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "DateScheduled"
+      }
+    }
+  },
+  {
+    "name": "ScheduledService",
+    "description": "",
+    "formatType": "uuid",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "uuid",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "uuid"
+      },
+      "vehicle": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Fleet Car 1",
+            "Fleet Car 2",
+            "Fleet Car 3",
+            "Fleet Car 4",
+            "Loaner Car",
+            "Loaner Van",
+            "Loaner Truck",
+            "Service Van 1",
+            "Service Van 2",
+            "Delivery Van",
+            "Delivery Truck",
+            "Service Truck 1",
+            "Service Truck 2",
+            "Executive Car 1",
+            "Executive Car 2",
+            "Executive Car 3",
+            "Sales Car 1",
+            "Sales Car 2",
+            "Sales Car 3"
+          ]
+        },
+        "formatType": "prime",
+        "name": "vehicle",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Vehicle"
+      },
+      "timestamp": {
+        "format": {
+          "dateTime": {
+            "day": "2-digit",
+            "month": "2-digit",
+            "year": "numeric"
+          }
+        },
+        "formatType": "timestamp",
+        "name": "timestamp",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "Timestamp"
+      },
+      "serviceCost": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "serviceCost",
+        "params": [
+          1,
+          100
+        ],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "ServiceCost"
+      },
+      "estimatedCost": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "estimatedCost",
+        "params": [
+          1,
+          100
+        ],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "EstimatedCost"
+      },
+      "serviceRecordType": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Repair",
+            "Warranty",
+            "Recall",
+            "Preventative"
+          ],
+          "valueLabels": [
+            {
+              "label": "Repair",
+              "value": 1
+            },
+            {
+              "label": "Warranty",
+              "value": 2
+            },
+            {
+              "label": "Recall",
+              "value": 3
+            },
+            {
+              "label": "Preventative",
+              "value": 4
+            }
+          ],
+          "max": 4,
+          "min": 1,
+          "severityBad": 1,
+          "severityGood": 4,
+          "severityLevels": 4
+        },
+        "formatType": "severity_level",
+        "name": "serviceRecordType",
+        "params": [
+          1,
+          4
+        ],
+        "statisticalType": "Data - Categorical - ordered - Severity Ranking",
+        "type": "ServiceRecordType"
+      },
+      "downtimeHours": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 24,
+          "min": 1
+        },
+        "formatType": "integer",
+        "name": "downtimeHours",
+        "params": [
+          1,
+          24
+        ],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "DowntimeHours"
+      },
+      "datePerformed": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "date",
+        "name": "datePerformed",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "DatePerformed"
+      },
+      "serviceDescription": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Flat Tire",
+            "Broken Glass",
+            "Oil Change",
+            "Regular Service Interval",
+            "Batttery",
+            "Exterior Damage",
+            "Engine Noise",
+            "Suspension",
+            "Brakes",
+            "Electrical",
+            "Interior",
+            "Air Conditioning",
+            "Navigation",
+            "Error Code",
+            "Emissions",
+            "Inspection",
+            "Accident Repair",
+            "Transmission",
+            "Performance",
+            "Detailing"
+          ]
+        },
+        "formatType": "prime",
+        "name": "serviceDescription",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "ServiceDescription"
+      },
+      "dateScheduled": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "date",
+        "name": "dateScheduled",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "DateScheduled"
+      }
+    }
+  },
+  {
+    "name": "CompletedService",
+    "description": "",
+    "formatType": "uuid",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "uuid",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "uuid"
+      },
+      "timestamp": {
+        "format": {
+          "dateTime": {
+            "day": "2-digit",
+            "month": "2-digit",
+            "year": "numeric"
+          }
+        },
+        "formatType": "timestamp",
+        "name": "timestamp",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "Timestamp"
+      },
+      "vehicle": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Fleet Car 1",
+            "Fleet Car 2",
+            "Fleet Car 3",
+            "Fleet Car 4",
+            "Loaner Car",
+            "Loaner Van",
+            "Loaner Truck",
+            "Service Van 1",
+            "Service Van 2",
+            "Delivery Van",
+            "Delivery Truck",
+            "Service Truck 1",
+            "Service Truck 2",
+            "Executive Car 1",
+            "Executive Car 2",
+            "Executive Car 3",
+            "Sales Car 1",
+            "Sales Car 2",
+            "Sales Car 3"
+          ]
+        },
+        "formatType": "prime",
+        "name": "vehicle",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Vehicle"
+      },
+      "serviceCost": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "serviceCost",
+        "params": [
+          1,
+          100
+        ],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "ServiceCost"
+      },
+      "estimatedCost": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "estimatedCost",
+        "params": [
+          1,
+          100
+        ],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "EstimatedCost"
+      },
+      "serviceRecordType": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Repair",
+            "Warranty",
+            "Recall",
+            "Preventative"
+          ],
+          "valueLabels": [
+            {
+              "label": "Repair",
+              "value": 1
+            },
+            {
+              "label": "Warranty",
+              "value": 2
+            },
+            {
+              "label": "Recall",
+              "value": 3
+            },
+            {
+              "label": "Preventative",
+              "value": 4
+            }
+          ],
+          "max": 4,
+          "min": 1,
+          "severityBad": 1,
+          "severityGood": 4,
+          "severityLevels": 4
+        },
+        "formatType": "severity_level",
+        "name": "serviceRecordType",
+        "params": [
+          1,
+          4
+        ],
+        "statisticalType": "Data - Categorical - ordered - Severity Ranking",
+        "type": "ServiceRecordType"
+      },
+      "downtimeHours": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 24,
+          "min": 1
+        },
+        "formatType": "integer",
+        "name": "downtimeHours",
+        "params": [
+          1,
+          24
+        ],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "DowntimeHours"
+      },
+      "datePerformed": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "date",
+        "name": "datePerformed",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "DatePerformed"
+      },
+      "serviceDescription": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Flat Tire",
+            "Broken Glass",
+            "Oil Change",
+            "Regular Service Interval",
+            "Batttery",
+            "Exterior Damage",
+            "Engine Noise",
+            "Suspension",
+            "Brakes",
+            "Electrical",
+            "Interior",
+            "Air Conditioning",
+            "Navigation",
+            "Error Code",
+            "Emissions",
+            "Inspection",
+            "Accident Repair",
+            "Transmission",
+            "Performance",
+            "Detailing"
+          ]
+        },
+        "formatType": "prime",
+        "name": "serviceDescription",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "ServiceDescription"
+      },
+      "dateScheduled": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "date",
+        "name": "dateScheduled",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "DateScheduled"
+      }
+    }
+  },
+  {
+    "name": "WarrantyStatus",
+    "description": "",
+    "formatType": "severity_level",
+    "initialQuantity": 2,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Expired",
+            "Active"
+          ],
+          "valueLabels": [
+            {
+              "label": "Expired",
+              "value": 1
+            },
+            {
+              "label": "Active",
+              "value": 2
+            }
+          ],
+          "max": 2,
+          "min": 1,
+          "severityBad": 1,
+          "severityGood": 2,
+          "severityLevels": 2
+        },
+        "formatType": "severity_level",
+        "name": "displayValue",
+        "params": [
+          1,
+          2,
+          {
+            "severityGood": 2,
+            "severityBad": 1,
+            "severityLevels": 2,
+            "valueLabels": [
+              {
+                "label": "Expired",
+                "value": 1
+              },
+              {
+                "label": "Active",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "statisticalType": "Data - Categorical - ordered - Severity Ranking",
+        "type": "severity_level"
+      },
+      "vehicle": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Fleet Car 1",
+            "Fleet Car 2",
+            "Fleet Car 3",
+            "Fleet Car 4",
+            "Loaner Car",
+            "Loaner Van",
+            "Loaner Truck",
+            "Service Van 1",
+            "Service Van 2",
+            "Delivery Van",
+            "Delivery Truck",
+            "Service Truck 1",
+            "Service Truck 2",
+            "Executive Car 1",
+            "Executive Car 2",
+            "Executive Car 3",
+            "Sales Car 1",
+            "Sales Car 2",
+            "Sales Car 3"
+          ]
+        },
+        "formatType": "prime",
+        "name": "vehicle",
+        "params": [
+          "Vehicle",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical",
+        "type": "arrayOf"
+      },
+      "timestamp": {
+        "format": {
+          "dateTime": {
+            "day": "2-digit",
+            "month": "2-digit",
+            "year": "numeric"
+          }
+        },
+        "formatType": "timestamp",
+        "name": "timestamp",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "Timestamp"
+      },
+      "vehicleWarranty": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "uuid",
+        "name": "vehicleWarranty",
+        "params": [
+          "VehicleWarranty",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "VehicleWarranty",
+    "description": "",
+    "formatType": "uuid",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "uuid",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "uuid"
+      },
+      "vehicle": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Fleet Car 1",
+            "Fleet Car 2",
+            "Fleet Car 3",
+            "Fleet Car 4",
+            "Loaner Car",
+            "Loaner Van",
+            "Loaner Truck",
+            "Service Van 1",
+            "Service Van 2",
+            "Delivery Van",
+            "Delivery Truck",
+            "Service Truck 1",
+            "Service Truck 2",
+            "Executive Car 1",
+            "Executive Car 2",
+            "Executive Car 3",
+            "Sales Car 1",
+            "Sales Car 2",
+            "Sales Car 3"
+          ]
+        },
+        "formatType": "prime",
+        "name": "vehicle",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Vehicle"
+      },
+      "warrantyStatus": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Expired",
+            "Active"
+          ],
+          "valueLabels": [
+            {
+              "label": "Expired",
+              "value": 1
+            },
+            {
+              "label": "Active",
+              "value": 2
+            }
+          ],
+          "max": 2,
+          "min": 1,
+          "severityBad": 1,
+          "severityGood": 2,
+          "severityLevels": 2
+        },
+        "formatType": "severity_level",
+        "name": "warrantyStatus",
+        "params": [
+          "WarrantyStatus",
+          20,
+          [
+            1,
+            2
+          ]
+        ],
+        "statisticalType": "Data - Categorical - ordered - Severity Ranking",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "Department",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 6489,
+          "min": 143
+        },
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "employeeId": {
+        "description": "",
+        "format": {
+          "examples": [
+            "A123",
+            "B231",
+            "F123",
+            "D213",
+            "C122",
+            "E564"
+          ],
+          "min": 1
+        },
+        "formatType": "string",
+        "name": "employeeId",
+        "params": [
+          "EmployeeId",
+          20,
+          [
+            0,
+            1000000
+          ]
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "Age",
+    "description": "",
+    "formatType": "integer",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 75,
+          "min": 1
+        },
+        "formatType": "integer",
+        "name": "displayValue",
+        "params": [
+          1,
+          75
+        ],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "employeeName": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 10000,
+          "min": 1
+        },
+        "formatType": "string",
+        "name": "employeeName",
+        "params": [
+          "EmployeeName",
+          20,
+          [
+            1,
+            10000
+          ]
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "employeeId": {
+        "description": "",
+        "format": {
+          "examples": [
+            "A123",
+            "B231",
+            "F123",
+            "D213",
+            "C122",
+            "E564"
+          ],
+          "min": 1
+        },
+        "formatType": "string",
+        "name": "employeeId",
+        "params": [
+          "EmployeeId",
+          20,
+          [
+            0,
+            1000000
+          ]
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "EmployeeName",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 10000,
+          "min": 1
+        },
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "employeeId": {
+        "description": "",
+        "format": {
+          "examples": [
+            "A123",
+            "B231",
+            "F123",
+            "D213",
+            "C122",
+            "E564"
+          ],
+          "min": 1
+        },
+        "formatType": "string",
+        "name": "employeeId",
+        "params": [
+          0,
+          1000000
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "EmployeeId"
+      },
+      "age": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 75,
+          "min": 1
+        },
+        "formatType": "integer",
+        "name": "age",
+        "params": [
+          1,
+          75
+        ],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "Age"
+      },
+      "department": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 6489,
+          "min": 143
+        },
+        "formatType": "string",
+        "name": "department",
+        "params": [
+          "Department",
+          20,
+          [
+            143,
+            6489
+          ]
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "DateOfJoining",
+    "description": "",
+    "formatType": "date",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "date",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "date"
+      },
+      "employeeId": {
+        "description": "",
+        "format": {
+          "examples": [
+            "A123",
+            "B231",
+            "F123",
+            "D213",
+            "C122",
+            "E564"
+          ],
+          "min": 1
+        },
+        "formatType": "string",
+        "name": "employeeId",
+        "params": [
+          "EmployeeId",
+          20,
+          [
+            0,
+            1000000
+          ]
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "EmployeeId",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 6,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [
+            "A123",
+            "B231",
+            "F123",
+            "D213",
+            "C122",
+            "E564"
+          ],
+          "min": 1
+        },
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [
+          [
+            "A123",
+            "B231",
+            "F123",
+            "D213",
+            "C122",
+            "E564"
+          ]
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "oneOfEach"
+      },
+      "department": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 6489,
+          "min": 143
+        },
+        "formatType": "string",
+        "name": "department",
+        "params": [
+          143,
+          6489
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Department"
+      },
+      "employeeName": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 10000,
+          "min": 1
+        },
+        "formatType": "string",
+        "name": "employeeName",
+        "params": [
+          1,
+          10000
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "EmployeeName"
+      },
+      "dateOfJoining": {
+        "description": "",
+        "format": {
+          "examples": []
+        },
+        "formatType": "date",
+        "name": "dateOfJoining",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "DateOfJoining"
+      },
+      "age": {
+        "description": "",
+        "format": {
+          "examples": [],
+          "max": 75,
+          "min": 1
+        },
+        "formatType": "integer",
+        "name": "age",
+        "params": [
+          1,
+          75
+        ],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "Age"
+      }
+    }
+  },
+  {
+    "name": "College",
+    "description": "",
+    "formatType": "full_name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "full_name"
+      },
+      "staffs": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "staffs",
+        "params": [
+          "Staffs",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "departments": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "departments",
+        "params": [
+          "Departments",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "students": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "students",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Students"
+      },
+      "timestamp": {
+        "format": {
+          "dateTime": {
+            "day": "2-digit",
+            "month": "2-digit",
+            "year": "numeric"
+          }
+        },
+        "formatType": "timestamp",
+        "name": "timestamp",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "Timestamp"
+      }
+    }
+  },
+  {
+    "name": "Staffs",
+    "description": "",
+    "formatType": "full_name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "full_name"
+      },
+      "college": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "college",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "College"
+      }
+    }
+  },
+  {
+    "name": "Students",
+    "description": "",
+    "formatType": "full_name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "full_name"
+      },
+      "college": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "college",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "College"
+      }
+    }
+  },
+  {
+    "name": "Departments",
+    "description": "",
+    "formatType": "name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "name"
+      },
+      "college": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "college",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "College"
+      }
+    }
+  },
+  {
+    "name": "Management",
+    "description": "",
+    "formatType": "owner",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "owner",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "owner"
+      },
+      "deprt": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "deprt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Deprt"
+      }
+    }
+  },
+  {
+    "name": "Deprt",
+    "description": "",
+    "formatType": "name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "name"
+      },
+      "services": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "services",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Services"
+      },
+      "tourism": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "tourism",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Tourism"
+      },
+      "entertainment": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "entertainment",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Entertainment"
+      },
+      "management": {
+        "description": "",
+        "format": {},
+        "formatType": "owner",
+        "name": "management",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Management"
+      }
+    }
+  },
+  {
+    "name": "Entertainment",
+    "description": "",
+    "formatType": "name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "name"
+      },
+      "theater": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "theater",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Theater"
+      },
+      "pub": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "pub",
+        "params": [
+          "Pub",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "games": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "games",
+        "params": [
+          "Games",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "boatHouse": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "boatHouse",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "BoatHouse"
+      },
+      "deprt": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "deprt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Deprt"
+      },
+      "services": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "services",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Services"
+      },
+      "tourism": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "tourism",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Tourism"
+      },
+      "entertainment": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "entertainment",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Entertainment"
+      },
+      "management": {
+        "description": "",
+        "format": {},
+        "formatType": "owner",
+        "name": "management",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Management"
+      }
+    }
+  },
+  {
+    "name": "Tourism",
+    "description": "",
+    "formatType": "name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "name"
+      },
+      "sightSeeing": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "sightSeeing",
+        "params": [
+          "SightSeeing",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "adventure": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "adventure",
+        "params": [
+          "Adventure",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "deprt": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "deprt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Deprt"
+      },
+      "services": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "services",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Services"
+      },
+      "tourism": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "tourism",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Tourism"
+      },
+      "entertainment": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "entertainment",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Entertainment"
+      },
+      "management": {
+        "description": "",
+        "format": {},
+        "formatType": "owner",
+        "name": "management",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Management"
+      }
+    }
+  },
+  {
+    "name": "Services",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "roomServices": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "roomServices",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "RoomServices"
+      },
+      "foodServices": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "foodServices",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "FoodServices"
+      },
+      "deprt": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "deprt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Deprt"
+      }
+    }
+  },
+  {
+    "name": "FoodServices",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "vegeterianFood": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "vegeterianFood",
+        "params": [
+          "VegeterianFood",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "nonVegeterianFood": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "nonVegeterianFood",
+        "params": [
+          "NonVegeterianFood",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "services": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "services",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Services"
+      },
+      "roomServices": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "roomServices",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "RoomServices"
+      },
+      "foodServices": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "foodServices",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "FoodServices"
+      },
+      "deprt": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "deprt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Deprt"
+      }
+    }
+  },
+  {
+    "name": "RoomServices",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "laundry": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "laundry",
+        "params": [
+          "Laundry",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "cleaning": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "cleaning",
+        "params": [
+          "Cleaning",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "services": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "services",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Services"
+      },
+      "roomServices": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "roomServices",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "RoomServices"
+      },
+      "foodServices": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "foodServices",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "FoodServices"
+      },
+      "deprt": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "deprt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Deprt"
+      }
+    }
+  },
+  {
+    "name": "NonVegeterianFood",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "foodServices": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "foodServices",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "FoodServices"
+      },
+      "vegeterianFood": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "vegeterianFood",
+        "params": [
+          "VegeterianFood",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "nonVegeterianFood": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "nonVegeterianFood",
+        "params": [
+          "NonVegeterianFood",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "services": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "services",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Services"
+      },
+      "roomServices": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "roomServices",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "RoomServices"
+      },
+      "deprt": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "deprt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Deprt"
+      }
+    }
+  },
+  {
+    "name": "VegeterianFood",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "foodServices": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "foodServices",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "FoodServices"
+      },
+      "vegeterianFood": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "vegeterianFood",
+        "params": [
+          "VegeterianFood",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "nonVegeterianFood": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "nonVegeterianFood",
+        "params": [
+          "NonVegeterianFood",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "services": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "services",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Services"
+      },
+      "roomServices": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "roomServices",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "RoomServices"
+      },
+      "deprt": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "deprt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Deprt"
+      }
+    }
+  },
+  {
+    "name": "Cleaning",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "roomServices": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "roomServices",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "RoomServices"
+      },
+      "laundry": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "laundry",
+        "params": [
+          "Laundry",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "cleaning": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "cleaning",
+        "params": [
+          "Cleaning",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "services": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "services",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Services"
+      },
+      "foodServices": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "foodServices",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "FoodServices"
+      },
+      "deprt": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "deprt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Deprt"
+      }
+    }
+  },
+  {
+    "name": "Laundry",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "roomServices": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "roomServices",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "RoomServices"
+      },
+      "laundry": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "laundry",
+        "params": [
+          "Laundry",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "cleaning": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "cleaning",
+        "params": [
+          "Cleaning",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "services": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "services",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Services"
+      },
+      "foodServices": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "foodServices",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "FoodServices"
+      },
+      "deprt": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "deprt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Deprt"
+      }
+    }
+  },
+  {
+    "name": "BoatHouse",
+    "description": "",
+    "formatType": "name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "name"
+      },
+      "entertainment": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "entertainment",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Entertainment"
+      },
+      "theater": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "theater",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Theater"
+      },
+      "pub": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "pub",
+        "params": [
+          "Pub",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "games": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "games",
+        "params": [
+          "Games",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "boatHouse": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "boatHouse",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "BoatHouse"
+      },
+      "deprt": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "deprt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Deprt"
+      },
+      "services": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "services",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Services"
+      },
+      "tourism": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "tourism",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Tourism"
+      },
+      "management": {
+        "description": "",
+        "format": {},
+        "formatType": "owner",
+        "name": "management",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Management"
+      }
+    }
+  },
+  {
+    "name": "Games",
+    "description": "",
+    "formatType": "name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "name"
+      },
+      "entertainment": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "entertainment",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Entertainment"
+      },
+      "theater": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "theater",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Theater"
+      },
+      "pub": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "pub",
+        "params": [
+          "Pub",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "games": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "games",
+        "params": [
+          "Games",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "boatHouse": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "boatHouse",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "BoatHouse"
+      },
+      "deprt": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "deprt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Deprt"
+      },
+      "services": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "services",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Services"
+      },
+      "tourism": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "tourism",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Tourism"
+      },
+      "management": {
+        "description": "",
+        "format": {},
+        "formatType": "owner",
+        "name": "management",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Management"
+      }
+    }
+  },
+  {
+    "name": "Pub",
+    "description": "",
+    "formatType": "name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "name"
+      },
+      "entertainment": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "entertainment",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Entertainment"
+      },
+      "theater": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "theater",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Theater"
+      },
+      "pub": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "pub",
+        "params": [
+          "Pub",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "games": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "games",
+        "params": [
+          "Games",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "boatHouse": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "boatHouse",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "BoatHouse"
+      },
+      "deprt": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "deprt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Deprt"
+      },
+      "services": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "services",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Services"
+      },
+      "tourism": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "tourism",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Tourism"
+      },
+      "management": {
+        "description": "",
+        "format": {},
+        "formatType": "owner",
+        "name": "management",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Management"
+      }
+    }
+  },
+  {
+    "name": "Theater",
+    "description": "",
+    "formatType": "name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "name"
+      },
+      "entertainment": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "entertainment",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Entertainment"
+      },
+      "theater": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "theater",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Theater"
+      },
+      "pub": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "pub",
+        "params": [
+          "Pub",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "games": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "games",
+        "params": [
+          "Games",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "boatHouse": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "boatHouse",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "BoatHouse"
+      },
+      "deprt": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "deprt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Deprt"
+      },
+      "services": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "services",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Services"
+      },
+      "tourism": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "tourism",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Tourism"
+      },
+      "management": {
+        "description": "",
+        "format": {},
+        "formatType": "owner",
+        "name": "management",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Management"
+      }
+    }
+  },
+  {
+    "name": "Adventure",
+    "description": "",
+    "formatType": "name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "name"
+      },
+      "campFire": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "campFire",
+        "params": [
+          "CampFire",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "mountainClimbing": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "mountainClimbing",
+        "params": [
+          "MountainClimbing",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "riverSurfing": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "riverSurfing",
+        "params": [
+          "RiverSurfing",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "tourism": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "tourism",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Tourism"
+      },
+      "sightSeeing": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "sightSeeing",
+        "params": [
+          "SightSeeing",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "adventure": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "adventure",
+        "params": [
+          "Adventure",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "deprt": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "deprt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Deprt"
+      },
+      "services": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "services",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Services"
+      },
+      "entertainment": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "entertainment",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Entertainment"
+      },
+      "management": {
+        "description": "",
+        "format": {},
+        "formatType": "owner",
+        "name": "management",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Management"
+      }
+    }
+  },
+  {
+    "name": "SightSeeing",
+    "description": "",
+    "formatType": "name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "name"
+      },
+      "mountainViewPoint": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "mountainViewPoint",
+        "params": [
+          "MountainViewPoint",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "beachViewPoint": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "beachViewPoint",
+        "params": [
+          "BeachViewPoint",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "tourism": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "tourism",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Tourism"
+      },
+      "sightSeeing": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "sightSeeing",
+        "params": [
+          "SightSeeing",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "adventure": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "adventure",
+        "params": [
+          "Adventure",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "deprt": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "deprt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Deprt"
+      },
+      "services": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "services",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Services"
+      },
+      "entertainment": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "entertainment",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Entertainment"
+      },
+      "management": {
+        "description": "",
+        "format": {},
+        "formatType": "owner",
+        "name": "management",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Management"
+      }
+    }
+  },
+  {
+    "name": "RiverSurfing",
+    "description": "",
+    "formatType": "name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "name"
+      },
+      "adventure": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "adventure",
+        "params": [
+          "Adventure",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "campFire": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "campFire",
+        "params": [
+          "CampFire",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "mountainClimbing": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "mountainClimbing",
+        "params": [
+          "MountainClimbing",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "riverSurfing": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "riverSurfing",
+        "params": [
+          "RiverSurfing",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "tourism": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "tourism",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Tourism"
+      },
+      "sightSeeing": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "sightSeeing",
+        "params": [
+          "SightSeeing",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "deprt": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "deprt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Deprt"
+      },
+      "services": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "services",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Services"
+      },
+      "entertainment": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "entertainment",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Entertainment"
+      },
+      "management": {
+        "description": "",
+        "format": {},
+        "formatType": "owner",
+        "name": "management",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Management"
+      }
+    }
+  },
+  {
+    "name": "MountainClimbing",
+    "description": "",
+    "formatType": "name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "name"
+      },
+      "adventure": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "adventure",
+        "params": [
+          "Adventure",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "campFire": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "campFire",
+        "params": [
+          "CampFire",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "mountainClimbing": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "mountainClimbing",
+        "params": [
+          "MountainClimbing",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "riverSurfing": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "riverSurfing",
+        "params": [
+          "RiverSurfing",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "tourism": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "tourism",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Tourism"
+      },
+      "sightSeeing": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "sightSeeing",
+        "params": [
+          "SightSeeing",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "deprt": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "deprt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Deprt"
+      },
+      "services": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "services",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Services"
+      },
+      "entertainment": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "entertainment",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Entertainment"
+      },
+      "management": {
+        "description": "",
+        "format": {},
+        "formatType": "owner",
+        "name": "management",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Management"
+      }
+    }
+  },
+  {
+    "name": "CampFire",
+    "description": "",
+    "formatType": "name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "name"
+      },
+      "adventure": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "adventure",
+        "params": [
+          "Adventure",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "campFire": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "campFire",
+        "params": [
+          "CampFire",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "mountainClimbing": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "mountainClimbing",
+        "params": [
+          "MountainClimbing",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "riverSurfing": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "riverSurfing",
+        "params": [
+          "RiverSurfing",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "tourism": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "tourism",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Tourism"
+      },
+      "sightSeeing": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "sightSeeing",
+        "params": [
+          "SightSeeing",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "deprt": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "deprt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Deprt"
+      },
+      "services": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "services",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Services"
+      },
+      "entertainment": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "entertainment",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Entertainment"
+      },
+      "management": {
+        "description": "",
+        "format": {},
+        "formatType": "owner",
+        "name": "management",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Management"
+      }
+    }
+  },
+  {
+    "name": "BeachViewPoint",
+    "description": "",
+    "formatType": "name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "name"
+      },
+      "sightSeeing": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "sightSeeing",
+        "params": [
+          "SightSeeing",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "mountainViewPoint": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "mountainViewPoint",
+        "params": [
+          "MountainViewPoint",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "beachViewPoint": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "beachViewPoint",
+        "params": [
+          "BeachViewPoint",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "tourism": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "tourism",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Tourism"
+      },
+      "adventure": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "adventure",
+        "params": [
+          "Adventure",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "deprt": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "deprt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Deprt"
+      },
+      "services": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "services",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Services"
+      },
+      "entertainment": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "entertainment",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Entertainment"
+      },
+      "management": {
+        "description": "",
+        "format": {},
+        "formatType": "owner",
+        "name": "management",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Management"
+      }
+    }
+  },
+  {
+    "name": "MountainViewPoint",
+    "description": "",
+    "formatType": "name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "name"
+      },
+      "sightSeeing": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "sightSeeing",
+        "params": [
+          "SightSeeing",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "mountainViewPoint": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "mountainViewPoint",
+        "params": [
+          "MountainViewPoint",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "beachViewPoint": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "beachViewPoint",
+        "params": [
+          "BeachViewPoint",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "tourism": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "tourism",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Tourism"
+      },
+      "adventure": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "adventure",
+        "params": [
+          "Adventure",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "deprt": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "deprt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Deprt"
+      },
+      "services": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "services",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Services"
+      },
+      "entertainment": {
+        "description": "",
+        "format": {},
+        "formatType": "name",
+        "name": "entertainment",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Entertainment"
+      },
+      "management": {
+        "description": "",
+        "format": {},
+        "formatType": "owner",
+        "name": "management",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Management"
+      }
+    }
+  },
+  {
+    "name": "Maintenance",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "medicines": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "medicines",
+        "params": [
+          "Medicines",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "hospitalDpt": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "hospitalDpt",
+        "params": [
+          "HospitalDpt",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "bloodBank": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "bloodBank",
+        "params": [
+          "BloodBank",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "surgicalDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "surgicalDetails",
+        "params": [
+          "SurgicalDetails",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "patientDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "patientDetails",
+        "params": [
+          "PatientDetails",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "doctorsDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "doctorsDetails",
+        "params": [
+          "DoctorsDetails",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "DoctorsDetails",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "surgeryDoctors": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "surgeryDoctors",
+        "params": [
+          "SurgeryDoctors",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "generalDoctors": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "generalDoctors",
+        "params": [
+          "GeneralDoctors",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "maintenance": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "maintenance",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Maintenance"
+      },
+      "medicines": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "medicines",
+        "params": [
+          "Medicines",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "hospitalDpt": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "hospitalDpt",
+        "params": [
+          "HospitalDpt",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "bloodBank": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "bloodBank",
+        "params": [
+          "BloodBank",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "surgicalDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "surgicalDetails",
+        "params": [
+          "SurgicalDetails",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "patientDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "patientDetails",
+        "params": [
+          "PatientDetails",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "doctorsDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "doctorsDetails",
+        "params": [
+          "DoctorsDetails",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "PatientDetails",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "surgeryPatientInfo": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "surgeryPatientInfo",
+        "params": [
+          "SurgeryPatientInfo",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "opDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "opDetails",
+        "params": [
+          "OpDetails",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "maintenance": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "maintenance",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Maintenance"
+      },
+      "medicines": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "medicines",
+        "params": [
+          "Medicines",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "hospitalDpt": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "hospitalDpt",
+        "params": [
+          "HospitalDpt",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "bloodBank": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "bloodBank",
+        "params": [
+          "BloodBank",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "surgicalDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "surgicalDetails",
+        "params": [
+          "SurgicalDetails",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "patientDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "patientDetails",
+        "params": [
+          "PatientDetails",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "doctorsDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "doctorsDetails",
+        "params": [
+          "DoctorsDetails",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "SurgicalDetails",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "patientsInfo": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "patientsInfo",
+        "params": [
+          "PatientsInfo",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "doctorInfo": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "doctorInfo",
+        "params": [
+          "DoctorInfo",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "maintenance": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "maintenance",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Maintenance"
+      },
+      "medicines": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "medicines",
+        "params": [
+          "Medicines",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "hospitalDpt": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "hospitalDpt",
+        "params": [
+          "HospitalDpt",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "bloodBank": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "bloodBank",
+        "params": [
+          "BloodBank",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "surgicalDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "surgicalDetails",
+        "params": [
+          "SurgicalDetails",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "patientDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "patientDetails",
+        "params": [
+          "PatientDetails",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "doctorsDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "doctorsDetails",
+        "params": [
+          "DoctorsDetails",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "BloodBank",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "bloodCheckUp": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "bloodCheckUp",
+        "params": [
+          "BloodCheckUp",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "patientInfo": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "patientInfo",
+        "params": [
+          "PatientInfo",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "bloodTypes": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "bloodTypes",
+        "params": [
+          "BloodTypes",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "maintenance": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "maintenance",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Maintenance"
+      },
+      "medicines": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "medicines",
+        "params": [
+          "Medicines",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "hospitalDpt": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "hospitalDpt",
+        "params": [
+          "HospitalDpt",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "bloodBank": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "bloodBank",
+        "params": [
+          "BloodBank",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "surgicalDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "surgicalDetails",
+        "params": [
+          "SurgicalDetails",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "patientDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "patientDetails",
+        "params": [
+          "PatientDetails",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "doctorsDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "doctorsDetails",
+        "params": [
+          "DoctorsDetails",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "HospitalDpt",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "physioTherapyDpt": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "physioTherapyDpt",
+        "params": [
+          "PhysioTherapyDpt",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "entDpt": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "entDpt",
+        "params": [
+          "EntDpt",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "dentalDpt": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "dentalDpt",
+        "params": [
+          "DentalDpt",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "maintenance": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "maintenance",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Maintenance"
+      },
+      "medicines": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "medicines",
+        "params": [
+          "Medicines",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "hospitalDpt": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "hospitalDpt",
+        "params": [
+          "HospitalDpt",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "bloodBank": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "bloodBank",
+        "params": [
+          "BloodBank",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "surgicalDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "surgicalDetails",
+        "params": [
+          "SurgicalDetails",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "patientDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "patientDetails",
+        "params": [
+          "PatientDetails",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "doctorsDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "doctorsDetails",
+        "params": [
+          "DoctorsDetails",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "BloodTypes",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "bloodBank": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "bloodBank",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "BloodBank"
+      }
+    }
+  },
+  {
+    "name": "PatientInfo",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "bloodBank": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "bloodBank",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "BloodBank"
+      }
+    }
+  },
+  {
+    "name": "BloodCheckUp",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "bloodBank": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "bloodBank",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "BloodBank"
+      }
+    }
+  },
+  {
+    "name": "GeneralDoctors",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "doctorsDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "doctorsDetails",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "DoctorsDetails"
+      }
+    }
+  },
+  {
+    "name": "SurgeryDoctors",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "doctorsDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "doctorsDetails",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "DoctorsDetails"
+      }
+    }
+  },
+  {
+    "name": "DentalDpt",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "generalTreatment": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "generalTreatment",
+        "params": [
+          "GeneralTreatment",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "rct": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "rct",
+        "params": [
+          "Rct",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "hospitalDpt": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "hospitalDpt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "HospitalDpt"
+      }
+    }
+  },
+  {
+    "name": "EntDpt",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "generalCheckup": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "generalCheckup",
+        "params": [
+          "GeneralCheckup",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "throatCheckup": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "throatCheckup",
+        "params": [
+          "ThroatCheckup",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "hospitalDpt": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "hospitalDpt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "HospitalDpt"
+      }
+    }
+  },
+  {
+    "name": "PhysioTherapyDpt",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "normalTreatment": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "normalTreatment",
+        "params": [
+          "NormalTreatment",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "hospitalDpt": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "hospitalDpt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "HospitalDpt"
+      }
+    }
+  },
+  {
+    "name": "OpDetails",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "patientDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "patientDetails",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PatientDetails"
+      }
+    }
+  },
+  {
+    "name": "SurgeryPatientInfo",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "patientDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "patientDetails",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PatientDetails"
+      }
+    }
+  },
+  {
+    "name": "DoctorInfo",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "surgicalDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "surgicalDetails",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "SurgicalDetails"
+      }
+    }
+  },
+  {
+    "name": "PatientsInfo",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "surgicalDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "surgicalDetails",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "SurgicalDetails"
+      }
+    }
+  },
+  {
+    "name": "Medicines",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "ayurvedic": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "ayurvedic",
+        "params": [
+          "Ayurvedic",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "allopathic": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "allopathic",
+        "params": [
+          "Allopathic",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "maintenance": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "maintenance",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Maintenance"
+      },
+      "medicines": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "medicines",
+        "params": [
+          "Medicines",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "hospitalDpt": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "hospitalDpt",
+        "params": [
+          "HospitalDpt",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "bloodBank": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "bloodBank",
+        "params": [
+          "BloodBank",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "surgicalDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "surgicalDetails",
+        "params": [
+          "SurgicalDetails",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "patientDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "patientDetails",
+        "params": [
+          "PatientDetails",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "doctorsDetails": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "doctorsDetails",
+        "params": [
+          "DoctorsDetails",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "Allopathic",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "medicines": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "medicines",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Medicines"
+      }
+    }
+  },
+  {
+    "name": "Ayurvedic",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "medicines": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "medicines",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Medicines"
+      }
+    }
+  },
+  {
+    "name": "Rct",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "dentalDpt": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "dentalDpt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "DentalDpt"
+      }
+    }
+  },
+  {
+    "name": "GeneralTreatment",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "dentalDpt": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "dentalDpt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "DentalDpt"
+      }
+    }
+  },
+  {
+    "name": "ThroatCheckup",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "entDpt": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "entDpt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "EntDpt"
+      }
+    }
+  },
+  {
+    "name": "GeneralCheckup",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "entDpt": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "entDpt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "EntDpt"
+      }
+    }
+  },
+  {
+    "name": "NormalTreatment",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "string"
+      },
+      "physioTherapyDpt": {
+        "description": "",
+        "format": {},
+        "formatType": "string",
+        "name": "physioTherapyDpt",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "PhysioTherapyDpt"
+      }
+    }
+  }
+]
