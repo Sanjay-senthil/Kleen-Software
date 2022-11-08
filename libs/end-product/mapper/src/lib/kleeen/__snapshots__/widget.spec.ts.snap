@@ -1,0 +1,230 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`kleeen widget should return "GetWidgetDataResult" response if "mapToWidget" is called from a Donut Variant, Donut, Pie or a Simple List Ranked widget 1`] = `
+Object {
+  "crossLinking": Array [],
+  "format": Object {
+    "xAxis": Object {
+      "categories": Array [
+        "Active",
+        "Expired",
+      ],
+      "examples": Array [
+        "Expired",
+        "Active",
+      ],
+      "key": "warrantyStatus",
+      "max": 2,
+      "min": 1,
+      "severityBad": 1,
+      "severityGood": 2,
+      "severityLevels": 2,
+      "type": "string",
+    },
+    "yAxis": Object {
+      "examples": Array [
+        "Fleet Car 1",
+        "Fleet Car 2",
+        "Fleet Car 3",
+        "Fleet Car 4",
+        "Loaner Car",
+        "Loaner Van",
+        "Loaner Truck",
+        "Service Van 1",
+        "Service Van 2",
+        "Delivery Van",
+        "Delivery Truck",
+        "Service Truck 1",
+        "Service Truck 2",
+        "Executive Car 1",
+        "Executive Car 2",
+        "Executive Car 3",
+        "Sales Car 1",
+        "Sales Car 2",
+        "Sales Car 3",
+      ],
+      "key": "vehicle",
+      "type": "number",
+    },
+  },
+  "results": Array [
+    15,
+    9,
+  ],
+}
+`;
+
+exports[`kleeen widget should return "GetWidgetDataResult" response if "mapToWidget" is called from a List widget 1`] = `
+Object {
+  "crossLinking": Array [],
+  "format": Object {
+    "xAxis": Object {
+      "categories": Array [
+        "Repair",
+        "Warranty",
+        "Preventative",
+        "Recall",
+      ],
+      "examples": Array [
+        "Repair",
+        "Warranty",
+        "Recall",
+        "Preventative",
+      ],
+      "key": "serviceRecordType",
+      "max": 4,
+      "min": 1,
+      "severityBad": 1,
+      "severityGood": 4,
+      "severityLevels": 4,
+      "type": "string",
+    },
+    "yAxis": Object {
+      "examples": Array [],
+      "key": "serviceRecord",
+      "type": "number",
+    },
+  },
+  "results": Array [
+    108,
+    10,
+    9,
+    2,
+  ],
+}
+`;
+
+exports[`kleeen widget should return "GetWidgetDataResult" response if "mapToWidget" is called from a Polar Area or a Simple List Ranked widget 1`] = `
+Object {
+  "crossLinking": Array [
+    Array [
+      Object {
+        "$metadata": Object {
+          "entityType": "",
+        },
+        "id": "B1021-96",
+      },
+      Object {
+        "$metadata": Object {
+          "entityType": "",
+        },
+        "id": "P1102-21",
+      },
+      Object {
+        "$metadata": Object {
+          "entityType": "",
+        },
+        "id": "B1029-16",
+      },
+    ],
+  ],
+  "format": Object {
+    "xAxis": Object {
+      "categories": Array [
+        "Air Cleaning Module Overcurrent - Circuit Current Above Threshold",
+        "Backlite Defrost Relay Fault - Signal Shape / Waveform Failure",
+        "Cabin Heater (PTCHF) 12V Logic Over Voltage - Circuit Voltage Above Threshold",
+      ],
+      "examples": Array [
+        "Air Cleaning Module Overcurrent - Circuit Current Above Threshold",
+        "Backlite Defrost Relay Fault - Signal Shape / Waveform Failure",
+        "Cabin Heater (PTCHF) 12V Logic Over Voltage - Circuit Voltage Above Threshold",
+        "Door Handle Rear Left 12V Supply Under Voltage - Circuit Voltage Below Threshold",
+        "Ext Door Handle Power RR Undercurrent - Circuit Current Below Threshold",
+        "External 12VA Out of Range - Circuit Voltage Out of Range",
+      ],
+      "key": "vehicleDtc",
+      "type": "string",
+    },
+    "yAxis": Object {
+      "examples": Array [
+        "Fleet Car 1",
+        "Fleet Car 2",
+        "Fleet Car 3",
+        "Fleet Car 4",
+        "Loaner Car",
+        "Loaner Van",
+        "Loaner Truck",
+        "Service Van 1",
+        "Service Van 2",
+        "Delivery Van",
+        "Delivery Truck",
+        "Service Truck 1",
+        "Service Truck 2",
+        "Executive Car 1",
+        "Executive Car 2",
+        "Executive Car 3",
+        "Sales Car 1",
+        "Sales Car 2",
+        "Sales Car 3",
+      ],
+      "key": "vehicle",
+      "type": "number",
+    },
+  },
+  "results": Array [
+    38,
+    58,
+    63,
+  ],
+}
+`;
+
+exports[`kleeen widget should return "GetWidgetDataResult" response if "mapToWidget" is called from a Single-Bar Horizontal/Vertical or a Simple List Ranked widget 1`] = `
+Object {
+  "crossLinking": Array [],
+  "format": Object {
+    "xAxis": Object {
+      "categories": Array [
+        "Battery",
+        "Brake",
+        "Coolant",
+        "Motor",
+        "Charging System",
+        "Navigation",
+      ],
+      "examples": Array [
+        "Flat Tire",
+        "Broken Glass",
+        "Oil Change",
+        "Regular Service Interval",
+        "Batttery",
+        "Exterior Damage",
+        "Engine Noise",
+        "Suspension",
+        "Brakes",
+        "Electrical",
+        "Interior",
+        "Air Conditioning",
+        "Navigation",
+        "Error Code",
+        "Emissions",
+        "Inspection",
+        "Accident Repair",
+        "Transmission",
+        "Performance",
+        "Detailing",
+      ],
+      "key": "serviceDescription",
+      "type": "string",
+    },
+    "yAxis": Object {
+      "examples": Array [],
+      "key": "serviceCost",
+      "max": 100,
+      "min": 1,
+      "prefix": "$",
+      "suffix": "k",
+      "type": "number",
+    },
+  },
+  "results": Array [
+    193,
+    179,
+    121,
+    76,
+    51,
+    47,
+  ],
+}
+`;
